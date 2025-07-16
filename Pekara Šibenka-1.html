@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pekara Šibenka - Svježi kruhovi, peciva i kolači u Šibeniku. Tradicionalni recepti i najkvalitetniji sastojci. Pozovite +385 91 234 5678">
+    <meta name="keywords" content="pekara, Šibenik, kruh, peciva, kolači, tradicionalna pekara, svježi proizvodi">
+    <meta name="author" content="Pekara Šibenka">
+    <title>Pekara Šibenka - Svježi kruhovi i peciva u Šibeniku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff8e1;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #d2691e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: #f4a460;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        section {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #d2691e;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #d2691e;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PEKARA ŠIBENKA</h1>
+    </header>
+    <nav>
+        <div style="display: flex; justify-content: center; align-items: center; position: relative;">
+            <div style="flex: 1; text-align: center;">
+                <a href="#about">O nama</a>
+                <a href="#products">Proizvodi</a>
+                <a href="#contact">Kontakt</a>
+            </div>
+            <a href="tel:+385912345678" class="nav-contact-btn" style="margin-left:auto;">Kontaktirajte nas ovdje</a>
+        </div>
+        <style>
+        .nav-contact-btn {
+            background: #d2691e;
+            color: #fff;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+            text-decoration: none;
+            font-size: 1em;
+            margin-left: 30px;
+        }
+        .nav-contact-btn:hover {
+            background: #b8541a;
+        }
+        .nav-contact-btn:active {
+            background: #9d4617;
+        }
+        nav {
+            position: relative;
+        }
+        @media (max-width: 600px) {
+            .nav-contact-btn {
+                display: block;
+                margin: 10px auto 0 auto;
+            }
+            nav div {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            section {
+                margin: 15px;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            iframe {
+                height: 250px !important;
+            }
+            footer div {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+        }
+        </style>
+    </nav>
+
+    <script>
+        // Osigurava da dugme za poziv radi ispravno
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactBtn = document.querySelector('.nav-contact-btn');
+            if (contactBtn) {
+                contactBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    // Direktno pozivanje broja
+                    window.location.href = 'tel:+385912345678';
+                });
+            }
+        });
+    </script>
+
+    <!-- Strukturirani podaci za Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "Pekara Šibenka",
+        "description": "Tradicionalna pekara s najsvježijim kruhovima, pecivima i kolačima u Šibeniku",
+        "url": "https://www.pekarasibenka.hr",
+        "telephone": "+385912345678",
+        "email": "info@pekarasibenka.hr",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Ulica Kruhova 1",
+            "addressLocality": "Šibenik",
+            "postalCode": "22000",
+            "addressCountry": "HR"
+        },
+        "openingHours": "Mo-Fr 06:00-18:00, Sa 06:00-14:00"
+    }
+    </script>
+    <section id="about">
+        <h2>O nama</h2>
+        <p>Naša pekara je osnovana s ciljem pružanja svježih i ukusnih pekarskih proizvoda. Naš tim stručnjaka svakodnevno priprema raznovrsne kruhove, peciva i kolače koristeći tradicionalne recepte i najkvalitetnije sastojke.</p>
+        <p>Posvećeni smo očuvanju tradicije pekarstva, ali i inovacijama u pripremi naših proizvoda. Naša misija je zadovoljiti sve vaše pekarske želje i potrebe.</p>
+    </section>
+    <section id="products">
+        <h2>samo neki od naših proizvoda</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; margin-bottom: 30px;">
+            <div style="background: #fff8e1; border-radius: 8px; box-shadow: 0 2px 8px rgba(210,105,30,0.08); padding: 20px; width: 220px; text-align: center;">
+                <h3 style="color: #d2691e; margin-top: 0;">Kruh od raži</h3>
+                <img src="preuzmi.jpg" alt="Kruh od raži" style="width:100%; border-radius:6px; margin-bottom:12px;">
+                <p>Tradicionalni raženi kruh bogat vlaknima i punog okusa.</p>
+            </div>
+            <div style="background: #fff8e1; border-radius: 8px; box-shadow: 0 2px 8px rgba(210,105,30,0.08); padding: 20px; width: 220px; text-align: center;">
+                <h3 style="color: #d2691e; margin-top: 0;">Bijeli kruh</h3>
+                <img src="preuzmi (8).jpg" alt="Bijeli kruh" style="width:100%; border-radius:6px; margin-bottom:12px;">
+                <p>Mekani bijeli kruh, idealan za svaki obrok.</p>
+            </div>
+            <div style="background: #fff8e1; border-radius: 8px; box-shadow: 0 2px 8px rgba(210,105,30,0.08); padding: 20px; width: 220px; text-align: center;">
+                <h3 style="color: #d2691e; margin-top: 0;">Integralni kruh</h3>
+                <img src="images.jpg" alt="Integralni kruh" style="width:100%; border-radius:6px; margin-bottom:12px;">
+                <p>Zdrav i ukusan kruh od cjelovitih žitarica.</p>
+            </div>
+            <div style="background: #fff8e1; border-radius: 8px; box-shadow: 0 2px 8px rgba(210,105,30,0.08); padding: 20px; width: 220px; text-align: center;">
+                <h3 style="color: #d2691e; margin-top: 0;">Peciva</h3>
+                <img src="preuzmi (12).jpg" alt="Peciva" style="width:100%; border-radius:6px; margin-bottom:12px;">
+                <p>Kiflice, buhtle i razna svježa peciva za svaki dan.</p>
+            </div>
+            <div style="background: #fff8e1; border-radius: 8px; box-shadow: 0 2px 8px rgba(210,105,30,0.08); padding: 20px; width: 220px; text-align: center;">
+                <h3 style="color: #d2691e; margin-top: 0;">Torte i kolači</h3>
+                <img src="preuzmi (10).jpg" alt="Torte i kolači" style="width:100%; border-radius:6px; margin-bottom:12px;">
+                <p>Štrudle, pite i razni kolači za sve prigode.</p>
+            </div>
+            <div style="background: #fff8e1; border-radius: 8px; box-shadow: 0 2px 8px rgba(210,105,30,0.08); padding: 20px; width: 220px; text-align: center;">
+                <h3 style="color: #d2691e; margin-top: 0;">Slane grickalice</h3>
+                <img src="preuzmi (11).jpg" alt="Slane grickalice" style="width: 180px;; border-radius:6px; margin-bottom:12px;">
+                <p>Krekere, perece i ostale slane delicije.</p>
+            </div>
+            <style>
+                .product-image {
+                    width: 180px;
+                    height: 120px;
+                    object-fit: cover;
+                    border-radius: 6px;
+                    margin-bottom: 12px;
+                }
+            </style>
+            <script>
+                // Ovaj skript nije nužan, ali osigurava da sve slike dobiju klasu
+                document.querySelectorAll('#products img').forEach(img => {
+                    img.classList.add('product-image');
+                    img.removeAttribute('style');
+                });
+            </script>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Za narudžbe i upite kontaktirajte nas:</p>
+        <ul>
+            <li>Telefon: <a href="tel:+385912345678" style="color:#d2691e; text-decoration:underline;">+385 91 234 5678</a></li>
+            <li>Email: <a href="mailto:info@pekarasibenka.hr" style="color:#d2691e; text-decoration:underline;">info@pekarasibenka.hr</a></li>
+            <li>Adresa: Ulica Kruhova 1, 22000 Šibenik</li>
+        </ul>
+        
+        <h3 style="color: #d2691e; margin-top: 30px;">Naša lokacija</h3>
+        <div style="margin-top: 20px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.5234567890123!2d15.895!3d43.7342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDQ0JzAzLjEiTiAxNcKwNTMnNDIuMCJF!5e0!3m2!1shr!2shr!4v1234567890123!5m2!1shr!2shr"
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Lokacija Pekare Šibenka">
+            </iframe>
+        </div>
+        <p style="margin-top: 15px; text-align: center; color: #666; font-size: 0.9em;">
+            <a href="https://goo.gl/maps/XXXXXX" target="_blank" style="color: #d2691e; text-decoration: underline;">
+                Otvori u Google Maps aplikaciji
+            </a>
+        </p>
+    </section>
+
+   <footer>
+    <div style="max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+        <div>
+            <p>&copy; 2025 Pekara Šibenka. Sva prava pridržana.</p>
+        </div>
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <a href="https://www.instagram.com/pekarasibenka" target="_blank" class="social-link" title="Pratite nas na Instagramu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+            </a>
+            <a href="https://www.tiktok.com/@pekarasibenka" target="_blank" class="social-link" title="Pratite nas na TikToku">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>
+            </a>
+        </div>
+        <div>
+            <p>Radno vrijeme: Pon-Pet 6:00-24:00, Sub 6:00-22:00</p>
+        </div>
+    </div>
+    
+    <style>
+    .social-link {
+        color: #fff;
+        text-decoration: none;
+        padding: 8px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.1);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+    }
+    
+    .social-link:hover {
+        background: rgba(255,255,255,0.2);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    
+    .social-link:first-of-type:hover {
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    }
+    
+    .social-link:last-of-type:hover {
+        background: #000;
+    }
+    
+    @media (max-width: 600px) {
+        footer div {
+            flex-direction: column;
+            text-align: center;
+            gap: 15px;
+        }
+        
+        .social-link {
+            margin: 0 5px;
+        }
+    }
+    </style>
+</footer>
+</body>
+</html>
